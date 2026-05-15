@@ -3,7 +3,6 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - claude/tower-defense-mobile-game-7D667
       - main
   workflow_dispatch:
 
