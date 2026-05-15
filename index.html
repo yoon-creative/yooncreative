@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#0b0d18" />
+  <title>Elemental Defense</title>
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <canvas id="game" width="900" height="1600"></canvas>
+
+    <div id="hud-top">
+      <div class="stat" id="stat-gold"><span class="ico">G</span><span id="gold">0</span></div>
+      <div class="stat" id="stat-lives"><span class="ico">L</span><span id="lives">0</span></div>
+      <div class="stat" id="stat-wave"><span class="ico">W</span><span id="wave">0</span></div>
+    </div>
+
+    <div id="hud-bottom">
+      <div id="tower-bar"></div>
+      <div id="action-bar">
+        <button id="btn-start" class="action">START WAVE</button>
+        <button id="btn-speed" class="action small">1x</button>
+        <button id="btn-pause" class="action small">II</button>
+      </div>
+    </div>
+
+    <div id="selection-panel" class="hidden">
+      <div class="sel-title"><span id="sel-name">Tower</span> <span class="lvl">Lv <span id="sel-level">1</span></span></div>
+      <div class="sel-stats">
+        <div>DMG <span id="sel-dmg">0</span></div>
+        <div>RNG <span id="sel-rng">0</span></div>
+        <div>RPM <span id="sel-rpm">0</span></div>
+      </div>
+      <div class="sel-actions">
+        <button id="btn-upgrade">UPGRADE <span id="upgrade-cost">0</span>G</button>
+        <button id="btn-sell">SELL <span id="sell-value">0</span>G</button>
+      </div>
+    </div>
+
+    <div id="message" class="hidden"></div>
+
+    <div id="overlay" class="hidden">
+      <div class="overlay-content">
+        <h1 id="overlay-title">Elemental Defense</h1>
+        <p id="overlay-text">Defend your realm against waves of invaders.</p>
+        <button id="btn-overlay">PLAY</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
