@@ -1,0 +1,16 @@
+{
+  "appId": "com.yooncreative.elementaldefense",
+  "appName": "Elemental Defense",
+  "webDir": ".",
+  "bundledWebRuntime": false,
+  "ios": {
+    "contentInset": "always",
+    "scrollEnabled": false
+  },
+  "android": {
+    "allowMixedContent": false
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+ios/
+android/
+.capacitor/
+*.log
+.vscode/
+.idea/

@@ -1,0 +1,25 @@
+{
+  "name": "elemental-defense",
+  "version": "0.1.0",
+  "description": "Tower defense mobile game (HTML5 + Capacitor for iOS/Android).",
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes serve -l 5173 .",
+    "start": "npx --yes serve -l 5173 .",
+    "build": "echo 'Static site — copy / serve the project root as-is.'",
+    "cap:init": "cap init \"Elemental Defense\" \"com.yooncreative.elementaldefense\" --web-dir=.",
+    "cap:add:ios": "cap add ios",
+    "cap:add:android": "cap add android",
+    "cap:sync": "cap sync",
+    "cap:open:ios": "cap open ios",
+    "cap:open:android": "cap open android"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.0.0"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/ios": "^6.0.0"
+  }
+}
